@@ -1,0 +1,50 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+
+# === Virtual envs ===
+.venv/
+venv/
+env/
+ENV/
+
+# === Packaging / build ===
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# === Testing / coverage ===
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+
+# === Type checkers ===
+.mypy_cache/
+.pytype/
+.pyright/
+
+# === IDEs ===
+.vscode/
+.idea/
+*.iml
+
+# === OS files ===
+.DS_Store
+Thumbs.db
+
+# === Logs ===
+*.log
+
+# === Jupyter ===
+.ipynb_checkpoints/
+
+# === dotenv / secrets ===
+.env
+.env.*
+!.env.example

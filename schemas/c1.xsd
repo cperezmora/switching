@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified">
+
+    <xsd:element name="CambioComercializador">
+        <xsd:complexType>
+            <xsd:sequence>
+
+                <xsd:element name="DatosSolicitud">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="CodigoProceso" type="xsd:string"/>
+                            <xsd:element name="CUPS" type="xsd:string"/>
+                            <xsd:element name="FechaSolicitud" type="xsd:date"/>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+
+                <xsd:element name="Agentes">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="ComercializadorEntrante" type="xsd:string"/>
+                            <xsd:element name="Distribuidor" type="xsd:string"/>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CambioComercializador>
+    <DatosSolicitud>
+        <CodigoProceso>C1</CodigoProceso>
+        <CUPS>ES0022000005180955CP</CUPS>
+        <FechaSolicitud>2026-01-30</FechaSolicitud>
+    </DatosSolicitud>
+    <Agentes>
+        <ComercializadorEntrante>COMERCIALIZADORA_X</ComercializadorEntrante>
+        <Distribuidor>DISTRIBUIDORA_Y</Distribuidor>
+    </Agentes>
+</CambioComercializador>
