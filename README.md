@@ -1,4 +1,23 @@
-﻿# Validador CNMC C1 (PoC)
+﻿# Contexto y propósito (presentación)
+Este proyecto forma parte de la presentación del **Talent Data Path de febrero de 2026 para Bluetab**.  
+Basado en las láminas compartidas, el objetivo es explicar un caso tecnológico de **switching eléctrico** y cómo una API puede ayudar a validar y trazar el proceso.
+
+¿Qué problema refleja la presentación?
+- Muchos actores (generación, transporte, distribución, comercialización y consumidor) intercambian información.
+- Existen múltiples tipos de comunicaciones, y el intercambio se realiza en **XML**.
+- Validar formato y reglas de negocio es clave antes de procesar cambios de comercializador.
+
+¿Qué solución muestra?
+- Un flujo claro: **recepción** → **validación de origen** → **validación XSD** → **reglas de negocio** → **análisis IA** → **respuesta al cliente**.
+- Persistencia de cada paso en base de datos para auditoría y trazabilidad.
+- Uso de una API backend con FastAPI y PostgreSQL, y un apoyo de IA (Groq) para explicar errores.
+- Capa de análisis con Power BI para informes y dashboards.
+
+# Metabase (OpenSource)
+El enfoque inicial podría ser cualquier herramienta de análisis de datos como **Power BI** o **Tableau**, pero en este caso se utiliza **Metabase** por ser gratuita y OpenSource.  
+En `docs/Metabase_Dashboard.png` se adjunta una imagen de un dashboard de ejemplo.
+
+## Validador CNMC C1 (PoC)
 
 API REST en FastAPI para validar XML C1 (CNMC) con:
 - Autenticación Bearer token simple.
@@ -139,25 +158,6 @@ Petición correcta:
 - La validación CUPS es solo de formato: `^ES[A-Z0-9]{18}$`.
 - `FechaSolicitud` no puede ser anterior a hoy.
 - El análisis IA solo se ejecuta si existe `GROQ_API_KEY`.
-
-## Contexto y propósito (presentación)
-Este proyecto forma parte de la presentación del **Talent Data Path de febrero de 2026 para Bluetab**.  
-Basado en las láminas compartidas, el objetivo es explicar un caso tecnológico de **switching eléctrico** y cómo una API puede ayudar a validar y trazar el proceso.
-
-¿Qué problema refleja la presentación?
-- Muchos actores (generación, transporte, distribución, comercialización y consumidor) intercambian información.
-- Existen múltiples tipos de comunicaciones, y el intercambio se realiza en **XML**.
-- Validar formato y reglas de negocio es clave antes de procesar cambios de comercializador.
-
-¿Qué solución muestra?
-- Un flujo claro: **recepción** → **validación de origen** → **validación XSD** → **reglas de negocio** → **análisis IA** → **respuesta al cliente**.
-- Persistencia de cada paso en base de datos para auditoría y trazabilidad.
-- Uso de una API backend con FastAPI y PostgreSQL, y un apoyo de IA (Groq) para explicar errores.
-- Capa de análisis con Power BI para informes y dashboards.
-
-## Metabase (OpenSource)
-El enfoque inicial podría ser cualquier herramienta de análisis de datos como **Power BI** o **Tableau**, pero en este caso se utiliza **Metabase** por ser gratuita y OpenSource.  
-En `docs/Metabase_Dashboard.png` se adjunta una imagen de un dashboard de ejemplo.
 
 ### Instalación rápida (Windows)
 Requiere tener **Docker** instalado en el equipo.
