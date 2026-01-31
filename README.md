@@ -66,6 +66,13 @@ Respuesta (JSON):
 - `400 Bad Request` si falla XSD o reglas
 - `401 Unauthorized` si el token es inválido
 
+Ejemplo de uso en local (CLI o Postman):
+```bash
+curl --location "http://127.0.0.1:8000/c1/validate" \
+  --header "Authorization: Bearer dev-token" \
+  --form "file=@/path/to/file"
+```
+
 Ejemplo de error:
 ```json
 {
