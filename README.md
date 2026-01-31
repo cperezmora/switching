@@ -1,6 +1,6 @@
 ﻿# Contexto y propósito (presentación)
 Este proyecto forma parte de la presentación del **Talent Data Path de febrero de 2026 para Bluetab**.  
-Basado en las láminas compartidas, el objetivo es explicar un caso tecnológico de **switching eléctrico** y cómo una API puede ayudar a validar y trazar el proceso.
+Basado en la presentación localizada en la carpeta /docs, el objetivo es explicar un caso tecnológico de **switching eléctrico** y cómo una API puede ayudar a validar y trazar el proceso.
 
 ¿Qué problema refleja la presentación?
 - Muchos actores (generación, transporte, distribución, comercialización y consumidor) intercambian información.
@@ -10,8 +10,8 @@ Basado en las láminas compartidas, el objetivo es explicar un caso tecnológico
 ¿Qué solución muestra?
 - Un flujo claro: **recepción** → **validación de origen** → **validación XSD** → **reglas de negocio** → **análisis IA** → **respuesta al cliente**.
 - Persistencia de cada paso en base de datos para auditoría y trazabilidad.
-- Uso de una API backend con FastAPI y PostgreSQL, y un apoyo de IA (Groq) para explicar errores.
-- Capa de análisis con Power BI para informes y dashboards.
+- Uso de una API backend con FastAPI y PostgreSQL y un apoyo de IA (Groq) para explicar errores.
+- Capa de análisis con Metabase para informes y dashboards.
 
 # Metabase (OpenSource)
 El enfoque inicial podría ser cualquier herramienta de análisis de datos como **Power BI** o **Tableau**, pero en este caso se utiliza **Metabase** por ser gratuita y OpenSource.  
