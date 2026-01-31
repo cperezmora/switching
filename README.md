@@ -155,6 +155,18 @@ Basado en las láminas compartidas, el objetivo es explicar un caso tecnológico
 - Uso de una API backend con FastAPI y PostgreSQL, y un apoyo de IA (Groq) para explicar errores.
 - Capa de análisis con Power BI para informes y dashboards.
 
+## Metabase (OpenSource)
+El enfoque inicial podría ser cualquier herramienta de análisis de datos como **Power BI** o **Tableau**, pero en este caso se utiliza **Metabase** por ser gratuita y OpenSource.  
+En `docs/Metabase_Dashboard.png` se adjunta una imagen de un dashboard de ejemplo.
+
+### Instalación rápida (Windows)
+Requiere tener **Docker** instalado en el equipo.
+```bash
+docker pull metabase/metabase:latest
+docker run -d -p 3000:3000 --name metabase metabase/metabase
+```
+Una vez arrancado, abre `http://localhost:3000/` y sigue los pasos de instalación la primera vez.
+
 ## Recursos y enlaces
 - Guía informativa para consumidores de electricidad: https://www.cnmc.es/file/186215/download
 - Formato de ficheros de intercambio: https://www.cnmc.es/expedientes/infde01119
